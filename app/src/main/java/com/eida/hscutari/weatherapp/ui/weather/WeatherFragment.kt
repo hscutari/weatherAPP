@@ -160,7 +160,9 @@ class WeatherFragment : Fragment(), LocationRequestWrapper.OnLocationListener {
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        constraintButtons.visibility = GONE
-        connectLocation()
+        if(grantResults[0] != -1){
+            constraintButtons.visibility = GONE
+            connectLocation()
+        }
     }
 }
