@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">weatherApp</string>
+    <string name="main_search_hint">Search your city</string>
+    <string name="title_no_connection">No connection</string>
+    <string name="title_retry">Retry</string>
+    <string name="error_message">An error has occurred. Please try again</string>
+</resources>
